@@ -24,7 +24,7 @@
   </organization>
 
   <properties>
-    <tourappVersion>0.8.0-SNAPSHOT</tourappVersion>
+    <!-- tourappVersion>0.8.0-SNAPSHOT</tourappVersion -->
   </properties>
   
   <profiles>
