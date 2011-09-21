@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jbundle.config</groupId>
+    <artifactId>jbundle-parent</artifactId>
+    <version>1.1.1-SNAPSHOT</version>
+    <relativePath>../jbundle/jbundle-parent</relativePath>
+  </parent>
+
+  <groupId>com.tourapp.config</groupId>
+  <artifactId>tourapp-parent</artifactId>
+  <version>1.1.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>tourapp-parent - Shared properties</name>
+  <description>Top level properties and features</description>
+  <url>http://www.tourapp.com</url>
+
+  <organization>
+    <name>tourapp.com</name>
+    <url>http://www.tourapp.com</url>
+  </organization>
+
+  <properties>
+    <tourappVersion>0.8.0-SNAPSHOT</tourappVersion>
+  </properties>
+  
+  <profiles>
+    <profile> 
+      <id>sonatype-oss-release</id>
+      <properties>
+        <OBRRepositoryIndex>tourapp-repository.xml</OBRRepositoryIndex>	<!-- Set to NONE if not used -->
+	<releaseRepository>http://repository.jbundle.org:8081/nexus/content/repositories/releases</releaseRepository>
+	<snapshotRepository>http://repository.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
+	<publicRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicRepository>
+	<stagingRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</stagingRepository>
+	<publicReleaseRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicReleaseRepository>
+      </properties>
+    </profile>
+  </profiles>
+
+  <licenses>
+    <license>
+      <name>The GNU General Public License, Version 3.0</name>
+      <url>http://www.gnu.org/licenses/gpl.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <url>http://scm.jbundle.org/gitweb/scm/git/workspace/tourapp-parent</url>
+    <connection>scm:git:http://scm.jbundle.org/scm/git/workspace/tourapp-parent</connection>
+    <developerConnection>scm:git:ssh://scm.jbundle.org/scm/git/workspace/tourapp-parent</developerConnection>
+  </scm>
+
+  <repositories>
+    <repository>
+      <id>jbundle-repository</id>
+      <name>jbundle-repository</name>
+      <url>http://repository.jbundle.org:8081/nexus/content/groups/public</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+  </repositories>
+  
+</project>
