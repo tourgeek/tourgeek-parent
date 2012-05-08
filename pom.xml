@@ -31,7 +31,7 @@
     <profile> 
       <id>sonatype-oss-release</id>
       <properties>
-        <OBRRepositoryIndex>tourapp-repository.xml</OBRRepositoryIndex>	<!-- Set to NONE if not used -->
+        <remoteOBRName>tourapp-repository.xml</remoteOBRName>	<!-- Set to NONE if not used -->
 	<releaseRepository>http://repository.jbundle.org:8081/nexus/content/repositories/releases</releaseRepository>
 	<snapshotRepository>http://repository.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
 	<publicRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicRepository>
