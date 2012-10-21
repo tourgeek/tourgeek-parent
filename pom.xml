@@ -5,13 +5,13 @@
   <parent>
     <groupId>org.jbundle.config</groupId>
     <artifactId>jbundle-parent</artifactId>
-    <version>1.2.3-SNAPSHOT</version>
+    <version>1.2.4-SNAPSHOT</version>
     <relativePath>../jbundle/jbundle-parent</relativePath>
   </parent>
 
   <groupId>com.tourapp.config</groupId>
   <artifactId>tourapp-parent</artifactId>
-  <version>1.2.3-SNAPSHOT</version>
+  <version>1.2.4-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>tourapp-parent - Shared properties</name>
