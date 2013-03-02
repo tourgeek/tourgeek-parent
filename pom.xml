@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jbundle.config</groupId>
     <artifactId>jbundle-parent</artifactId>
-    <version>1.3.2-SNAPSHOT</version>
+    <version>1.3.1</version>
     <relativePath>../../jbundle/jbundle-parent</relativePath>
   </parent>
 
@@ -23,32 +23,17 @@
     <url>http://www.tourapp.com</url>
   </organization>
 
-  <properties>
-    <!-- tourapp-version-range>[0.8.0-SNAPSHOT,0.9.0-SNAPSHOT)</tourapp-version-range -->
-    <releaseRepository>http://repository.jbundle.org:8081/nexus/content/repositories/releases</releaseRepository>
-    <snapshotRepository>http://repository.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
-    <publicRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicRepository>
-    <stagingRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</stagingRepository>
-    <publicReleaseRepository>${publicRepository}</publicReleaseRepository>
-  </properties>
-  
-  <profiles>
-    <profile> 
-      <id>sonatype-oss-release</id>
-      <properties>
-        <releaseRepository>http://repository.jbundle.org:8081/nexus/content/repositories/releases</releaseRepository>
-        <snapshotRepository>http://repository.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
-        <publicRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicRepository>
-        <stagingRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</stagingRepository>
-        <publicReleaseRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicReleaseRepository>
-      </properties>
-    </profile>
-  </profiles>
+  <scm>
+    <url>https://github.com/tourapp/tourapp-parent</url>
+    <connection>scm:git:https://github.com/tourapp/tourapp-parent</connection>
+    <developerConnection>scm:git:https://github.com/tourapp/tourapp-parent</developerConnection>
+  </scm>
 
   <repositories>
     <repository>
-      <id>jbundle-repo</id>
-      <url>${snapshotRepository}</url>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
       <releases>
         <enabled>false</enabled>
       </releases>
@@ -56,31 +41,6 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
-        <repository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
   </repositories>
-
-  <licenses>
-    <license>
-      <name>The GNU General Public License, Version 3.0</name>
-      <url>http://www.gnu.org/licenses/gpl.txt</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-
-  <scm>
-    <url>http://scm.jbundle.org/gitweb/scm/git/workspace/tourapp-parent</url>
-    <connection>scm:git:http://scm.jbundle.org/scm/git/workspace/tourapp-parent</connection>
-    <developerConnection>scm:git:ssh://scm.jbundle.org/scm/git/workspace/tourapp-parent</developerConnection>
-  </scm>
 
 </project>
