@@ -25,8 +25,8 @@
 
   <scm>
     <url>https://github.com/tourapp/tourapp-parent</url>
-    <connection>scm:git:git://github.com/tourapp/tourapp-parent</connection>
-    <developerConnection>scm:git:git://github.com/tourapp/tourapp-parent</developerConnection>
+    <connection>scm:git:https://github.com/tourapp/tourapp-parent.git</connection>
+    <developerConnection>scm:git:https://github.com/tourapp/tourapp-parent.git</developerConnection>
   </scm>
 
   <repositories>
