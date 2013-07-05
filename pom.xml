@@ -9,24 +9,24 @@
     <relativePath>../../jbundle/jbundle-parent</relativePath>
   </parent>
 
-  <groupId>com.tourapp.config</groupId>
-  <artifactId>tourapp-parent</artifactId>
+  <groupId>com.tourgeek.config</groupId>
+  <artifactId>tourgeek-parent</artifactId>
   <version>1.3.2-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>tourapp-parent - Shared properties</name>
+  <name>tourgeek-parent - Shared properties</name>
   <description>Top level properties and features</description>
-  <url>http://www.tourapp.com</url>
+  <url>http://www.tourgeek.com</url>
 
   <organization>
-    <name>tourapp.com</name>
-    <url>http://www.tourapp.com</url>
+    <name>tourgeek.com</name>
+    <url>http://www.tourgeek.com</url>
   </organization>
 
   <scm>
-    <url>https://github.com/tourapp/tourapp-parent</url>
-    <connection>scm:git:https://github.com/tourapp/tourapp-parent.git</connection>
-    <developerConnection>scm:git:https://github.com/tourapp/tourapp-parent.git</developerConnection>
+    <url>https://github.com/tourgeek/tourgeek-parent</url>
+    <connection>scm:git:https://github.com/tourgeek/tourgeek-parent.git</connection>
+    <developerConnection>scm:git:https://github.com/tourgeek/tourgeek-parent.git</developerConnection>
   </scm>
 
   <repositories>
